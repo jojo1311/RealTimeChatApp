@@ -1,9 +1,9 @@
-class Channel extends RTCIceCandidate.Component{
+class Channel extends React.Component{
     render(){
         return(
-            <li>Channel Nname</li>
+            <li>Channel Name</li>
         )
     }
 }
 
-ReactDom.render(<Channel />, document.getElementById('app'));
+ReactDOM.render(<Channel />, document.getElementById('app'));
