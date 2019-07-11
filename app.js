@@ -31,15 +31,28 @@ class ChannelList extends React.Component{
 }
 
 class ChannelForm extends React.Component{
+    //Function to access input value.
+    onChange(e){
+        this.setState({
+            channelName: e.target.value
+        })
+       // console.log(e.target.value);
+    }
+    onSubmit(e){
+        let {channelName} = this.state;
+        console.log(channelName);
+        e.preventDefault();
+    }
     render(){
         return(
-            <form>
-                <input type='button' value="Add Channel"  />
+            //If we want to have access to react component within  an  event handler we need to  call bind and passed this.
+            <form onSubmit={this.onSubmit.bind(this)}>
+                <input type='text'  placeholder="Add New Channel"  onChange={this.onChange.bind(this)} />
            </form>
         )
     }
 }
-
+// create component section -->
 class ChannelSection extends React.Component {
     render(){
         return(
