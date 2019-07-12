@@ -2,7 +2,10 @@
 Real Time Chat App using :  Front-end  Reactjs | Backend: Go | DB: RethinkDB
 
 Run server:
-python -m SimpleHTTPServer 3000
+ webpack-dev-server
+
+Project will be run  http://localhost:8080/
+
 
 Front-end 
     /rtsupport
