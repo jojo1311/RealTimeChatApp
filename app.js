@@ -1,5 +1,3 @@
-
-
 class Channel extends React.Component{
     onClick(){
         console.log('I was clicked', this.props.name);
@@ -41,6 +39,9 @@ class ChannelForm extends React.Component{
        // console.log(e.target.value);
     }
     onSubmit(e){
+        //creating variable
+        let {channelName} = this.state;
+        console.log(channelName);
         // clearing out input form
         this.setState({
             channelName: ' '
@@ -79,7 +80,7 @@ class ChannelSection extends React.Component {
         channels.push({name: name});
         this.setState({
             channels: channels
-        })
+        });
 
     }
     render(){

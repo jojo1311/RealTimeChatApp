@@ -1,0 +1,16 @@
+{
+  "name": "rtsupport",
+  "version": "1.0.0",
+  "description": "Real Time Support Front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josette Rojas",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
