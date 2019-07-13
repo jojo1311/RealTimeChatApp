@@ -1,6 +1,6 @@
 class Channel extends React.Component{
     onClick(){
-        console.log('I was clicked', this.props.name);
+        //console.log('I was clicked', this.props.name);
     }
     render(){
         return(
